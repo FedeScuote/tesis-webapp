@@ -1,0 +1,13 @@
+#.travis.yml
+
+language: node_js
+node_js:
+  - "8.9"
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - yarn install --pure-lockfile --silent --non-interactive
+  - yarn test
+  - ng build --prod
