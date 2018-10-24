@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-create-user',
@@ -6,4 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-users.component.scss']
 })
 export class CreateUsersComponent {
+  public formControl = new FormControl();
+  public roles: string[] = ['BUYER', 'SELLER', 'ADMIN'];
 }

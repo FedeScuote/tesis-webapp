@@ -1,10 +1,22 @@
 <div class="container">
   <mat-divider></mat-divider>
   <mat-form-field>
-    <input matInput placeholder="Input">
+    <input matInput placeholder="Name">
   </mat-form-field>
 
   <mat-form-field>
-    <textarea matInput placeholder="Textarea"></textarea>
+    <input matInput placeholder="Email">
   </mat-form-field>
+
+  <mat-form-field>
+    <input matInput placeholder="User ID">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select placeholder="roles" [formControl]="formControl" multiple>
+      <mat-option *ngFor="let singleRole of roles" [value]="singleRole">{{ singleRole }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-flat-button color="primary">Create User</button>
 </div>

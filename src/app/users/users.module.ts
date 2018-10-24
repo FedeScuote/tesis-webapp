@@ -1,10 +1,19 @@
 import { NgModule } from '@angular/core';
 
 import { CreateUsersComponent } from './create-users/create-users.component';
-import { MatCardModule, MatDividerModule, MatFormFieldModule, MatInputModule, MatOptionModule, MatSelectModule } from '@angular/material';
+import {
+  MatButtonModule,
+  MatCardModule,
+  MatDividerModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatOptionModule,
+  MatSelectModule
+} from '@angular/material';
 import { UsersListComponent } from './users-list/users-list.component';
 import { UsersComponent } from './users.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,12 +23,14 @@ import { BrowserModule } from '@angular/platform-browser';
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     MatFormFieldModule,
     MatInputModule,
     MatOptionModule,
     MatSelectModule,
     MatDividerModule,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   providers: [
     UsersComponent,
