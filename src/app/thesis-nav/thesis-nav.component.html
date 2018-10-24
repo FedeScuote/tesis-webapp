@@ -1,0 +1,22 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <h1>Tesis webapp</h1>
+    </mat-toolbar>
+    <nav class="navigation-menu
+     tal-pseudo-container--immediate"
+         mat-tab-nav-bar>
+      <a mat-tab-link
+         *ngFor="let link of menuLinks"
+         [routerLink]="link.path"
+         routerLinkActive
+         #rla="routerLinkActive"
+         [active]="rla.isActive">
+        <span>
+          {{ link.label }}
+        </span>
+      </a>
+    </nav>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
