@@ -11,7 +11,11 @@ import { map } from 'rxjs/operators';
 export class ThesisNavComponent {
   public menuLinks = [
     { path: 'home', label: 'Home' },
-    { path: 'users', label: 'Users' }
+    { path: 'users', label: 'Users' },
+    { path: 'organization', label: 'Organization' },
+    { path: 'product', label: 'Product' },
+    { path: 'receipt', label: 'Receipt' },
+    { path: 'service', label: 'Service' }
   ];
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)

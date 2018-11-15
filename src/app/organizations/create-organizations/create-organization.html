@@ -1,19 +1,19 @@
 <div class="container">
   <mat-divider></mat-divider>
   <mat-form-field>
-    <input [(ngModel)]="user.name" matInput placeholder="Name">
+    <input [(ngModel)]="organization.name" matInput placeholder="Name">
   </mat-form-field>
 
   <mat-form-field>
-    <input [(ngModel)]="user.email" matInput placeholder="Email">
+    <input [(ngModel)]="organization.email" matInput placeholder="Email">
   </mat-form-field>
 
   <mat-form-field>
-    <input [(ngModel)]="user.userId" matInput placeholder="User ID">
+    <input [(ngModel)]="organization.organizationId" matInput placeholder="User ID">
   </mat-form-field>
 
   <mat-form-field>
-    <mat-select [(ngModel)]="user.roles" placeholder="roles" [formControl]="formControl" multiple>
+    <mat-select [(ngModel)]="organization.roles" placeholder="roles" [formControl]="formControl" multiple>
       <mat-option *ngFor="let singleRole of roles" [value]="singleRole">{{ singleRole }}</mat-option>
     </mat-select>
   </mat-form-field>
