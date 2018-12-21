@@ -13,9 +13,9 @@ export class ThesisNavComponent {
     { path: 'home', label: 'Home' },
     { path: 'users', label: 'Users' },
     { path: 'organization', label: 'Organization' },
-    { path: 'product', label: 'Product' },
-    { path: 'receipt', label: 'Receipt' },
-    { path: 'service', label: 'Service' }
+    { path: 'receipts', label: 'Receipts' },
+    { path: 'buy-service', label: 'Buy Services' },
+    { path: 'offer-service', label: 'Offer Services' }
   ];
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)

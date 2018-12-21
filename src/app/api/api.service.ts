@@ -49,4 +49,11 @@ export class ApiService {
     return this.http.post(`${API_BASE_URL}/org.tesis.mynetwork.createOrganization`, organization);
   }
 
+  public getReceipts(): Observable<any> {
+    return this.http.get(`${API_BASE_URL}/api/org.tesis.mynetwork.getReceipts`);
+  }
+
+  public offerService(service): Observable<any> {
+    return this.http.post(`${API_BASE_URL}/api/org.tesis.mynetwork.offerService`, service);
+  }
 }

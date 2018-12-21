@@ -1,0 +1,23 @@
+<div class="container">
+  <mat-divider></mat-divider>
+  <mat-form-field>
+    <input [(ngModel)]="service.description" matInput placeholder="Description">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input [(ngModel)]="service.price" matInput placeholder="Price">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input [(ngModel)]="service.serviceId" matInput placeholder="Service ID">
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-select [(ngModel)]="service.offeredTo" placeholder="Offered to Org..." [formControl]="formControl">
+      <mat-option *ngFor="let organization of organizations"
+                  [value]="organization.$class + '#' + organization.organizationId">{{ organization.name }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" (click)="submitForm()">Offer Service</button>
+</div>

@@ -16,6 +16,8 @@ import { ROUTES } from './app.routes';
 import { UsersModule } from './users/users.module';
 import { ApiModule } from './api/api.module';
 import { OrganizationModule } from './organizations/organizations.module';
+import { ReceiptsModule } from './receipts/receipts.module';
+import { OfferServiceModule } from './offer-service/offer-service.module';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { OrganizationModule } from './organizations/organizations.module';
     RouterModule.forRoot(ROUTES),
     UsersModule,
     OrganizationModule,
-    ApiModule
+    ApiModule,
+    ReceiptsModule,
+    OfferServiceModule
 ],
   providers: [],
   bootstrap: [AppComponent]
