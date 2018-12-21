@@ -56,4 +56,15 @@ export class ApiService {
   public offerService(service): Observable<any> {
     return this.http.post(`${API_BASE_URL}/api/org.tesis.mynetwork.offerService`, service);
   }
+
+  public getOffers(): Observable<any> {
+    return this.http.post(`${API_BASE_URL}/api/org.tesis.mynetwork.getOffers`, {'$class': 'org.tesis.mynetwork.getOffers'});
+  }
+
+  public buyOffer(offer): Observable<any> {
+    return this.http.post(`${API_BASE_URL}/api/org.tesis.mynetwork.buyService`,
+      {'$class': 'org.tesis.mynetwork.buyService',
+        'serviceId': offer.$class + '#' + offer.commodityId,
+        'receiptId': (Math.floor(Math.random() * 100) + 1)});
+  }
 }

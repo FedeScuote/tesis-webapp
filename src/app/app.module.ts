@@ -18,6 +18,7 @@ import { ApiModule } from './api/api.module';
 import { OrganizationModule } from './organizations/organizations.module';
 import { ReceiptsModule } from './receipts/receipts.module';
 import { OfferServiceModule } from './offer-service/offer-service.module';
+import { BuyOfferModule } from './buy-offers/buy-offer.module';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { OfferServiceModule } from './offer-service/offer-service.module';
     OrganizationModule,
     ApiModule,
     ReceiptsModule,
-    OfferServiceModule
+    OfferServiceModule,
+    BuyOfferModule
 ],
   providers: [],
   bootstrap: [AppComponent]

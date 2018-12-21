@@ -14,7 +14,7 @@ export class ThesisNavComponent {
     { path: 'users', label: 'Users' },
     { path: 'organization', label: 'Organization' },
     { path: 'receipts', label: 'Receipts' },
-    { path: 'buy-service', label: 'Buy Services' },
+    { path: 'buy-offer', label: 'Buy Services' },
     { path: 'offer-service', label: 'Offer Services' }
   ];
 
