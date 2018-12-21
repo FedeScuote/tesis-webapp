@@ -15,6 +15,7 @@ import {AppRoutingModule} from './routes/app-routing.module';
 import { ROUTES } from './app.routes';
 import { UsersModule } from './users/users.module';
 import { ApiModule } from './api/api.module';
+import { OrganizationModule } from './organizations/organizations.module';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { ApiModule } from './api/api.module';
     MatInputModule,
     RouterModule.forRoot(ROUTES),
     UsersModule,
+    OrganizationModule,
     ApiModule
 ],
   providers: [],

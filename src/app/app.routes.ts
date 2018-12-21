@@ -1,8 +1,8 @@
-import {HomepageComponent} from './homepage/homepage.component';
 import { UsersComponent } from './users/users.component';
+import { OrganizationsComponent } from './organizations/organizations.component';
 
 export const ROUTES = [
-  { path: '', component: HomepageComponent },
-  { path: 'home', component: HomepageComponent },
+  { path: '', component: UsersComponent },
   { path: 'users', component: UsersComponent },
+  { path: 'organization', component: OrganizationsComponent }
 ];

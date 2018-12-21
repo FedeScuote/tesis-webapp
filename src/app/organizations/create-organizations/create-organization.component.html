@@ -1,0 +1,24 @@
+<div class="container">
+  <mat-divider></mat-divider>
+  <mat-form-field>
+    <input [(ngModel)]="organization.name" matInput placeholder="Name">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input [(ngModel)]="organization.address" matInput placeholder="Address">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input [(ngModel)]="organization.organizationId" matInput placeholder="Organization ID">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input [(ngModel)]="organization.RUT" matInput placeholder="Organization RUT">
+  </mat-form-field>
+
+  <mat-form-field>
+    <input [(ngModel)]="organization.balance" matInput placeholder="Organization Balance">
+  </mat-form-field>
+
+  <button mat-flat-button color="primary" (click)="submitForm()">Create User</button>
+</div>

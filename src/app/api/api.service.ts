@@ -37,6 +37,10 @@ export class ApiService {
     return this.http.get(`${API_BASE_URL}/api/org.tesis.mynetwork.NormalOrganization`);
   }
 
+  public getRegulatorOrgs(): Observable<any> {
+    return this.http.get(`${API_BASE_URL}/api/org.tesis.mynetwork.RegulatorOrganization`);
+  }
+
   public getOrganization(organizationId: string): Observable<any> {
     return this.http.get(`${API_BASE_URL}/api/org.tesis.mynetwork.NormalOrganization/${organizationId}`);
   }
