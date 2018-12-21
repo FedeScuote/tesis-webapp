@@ -64,7 +64,7 @@ export class ApiService {
   public buyOffer(offer): Observable<any> {
     return this.http.post(`${API_BASE_URL}/api/org.tesis.mynetwork.buyService`,
       {'$class': 'org.tesis.mynetwork.buyService',
-        'serviceId': offer.$class + '#' + offer.commodityId,
+        'serviceId': offer.commodityId,
         'receiptId': (Math.floor(Math.random() * 100) + 1)});
   }
 }
